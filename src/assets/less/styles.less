@@ -1,0 +1,182 @@
+
+
+@color-red: #ff0000;
+@color-pblue: #0076C0;
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+.ws-landing {
+    height: 100%;
+    font-family: "roboto-regular";
+    line-height: 1.15;
+}
+
+.ws-landing {
+    background: url("../images/bg-img.jpg") center center no-repeat;
+    background-size: cover;
+    position: unset;
+    background-attachment: fixed;
+    min-height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.ws-landing:after {
+    position: unset;
+    min-height: 100%;
+    width: 100%;
+    background-color: none;
+    z-index: 1;
+}
+
+.ws-landing div[ui-view] {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.ws-landing div[ui-view].heightAuto {
+    height: auto;
+}
+
+.ws-landing {
+    .width-container-home {
+        width: 100%;
+        max-width: 1366px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 85%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .header {
+        color: #fff;
+        background-color: #286090;
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-left: 35px;
+    }
+    .navbar{
+        min-height: auto;
+    }
+    .martot-zero{
+        margin: 0px;
+    }
+    .cursor-auto {
+        cursor: auto;
+        text-decoration: none;
+    }
+    .main-total-wrapper {
+        color: #fff;
+        background-color: #286090;
+    }
+    .main-total-wrapper .header {
+        padding: 15px;
+    }
+    .main-header-list {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-header-list-wrapper li:not(:last-child):after {
+        content: "|";
+        color: #fff;
+    }
+    .main-header-list a {
+        color: #83c2f1;
+        padding: 5px;
+        font-size: 1.072em;
+    }
+    .main-header-list a.active b {
+        font-weight: normal;
+    }
+    .bg-image-container {
+        min-height: 40vh;
+        position: relative;
+    }
+    .main-navigation-portal-container {
+        padding: 15px;
+        font-size: 1em;
+    }
+    .main-navigation-portal {
+        margin: 20px auto 35px;
+    }
+    .main-portal-navigation-links {
+        width: 95%;
+        padding: 10px;
+        position: relative;
+        background: -webkit-linear-gradient(#1496e8, #0278c2);
+        background: -o-linear-gradient(#1496e8, #0278c2);
+        background: linear-gradient(#1496e8, #0278c2);
+        border: 1px solid #53bafb;
+        box-shadow: 0px 5px 10px 1px rgba(0, 56, 92, 0.8);
+    }
+    .login-portal-description {
+        width: 95%;
+        margin: auto;
+        margin-top: 12px;
+        text-align: justify;
+        line-height: 1.18;
+    }
+    .main-portal-navigation-links:after {
+        content: '→';
+        margin: 5px 8px;
+        position: absolute;
+        font-size: 1.1em;
+        right: 0;
+        top: 3px;
+        margin-right: 10px;
+    }
+    .header-logo-tagline-container {
+        float: left;
+    }
+    label.pipe-symbol {
+        height: 32px;
+        position: relative;
+        top: 13px;
+        margin: auto 15px;
+        border-right: 1px solid #fff;
+        opacity: 0.5;
+    }
+    .express-loan-logo-link {
+        height: 38px;
+        padding-top: 10px
+    }
+    .main-header-list a.active {
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.ws-landing main {
+    
+}
+.ws-landing main .bg-image-container:before {
+    content: '';
+    background: url(../images/secBack-img.png) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+

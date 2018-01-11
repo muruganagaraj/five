@@ -1,0 +1,22 @@
+Login
+<table>
+    <tr>
+        <td>UserName:</td>
+        <td><input type="text" [(ngModel)]="vm.loginVM.userName"></td>
+    </tr>
+    <tr>
+        <td>password:</td>
+        <td><input type="text" [(ngModel)]="vm.loginVM.password"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" (click)="onLoginClick()">Login</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <toaster-container></toaster-container>
+            <button (click)="popToast()">pop toast</button>
+        </td>
+    </tr>
+</table>

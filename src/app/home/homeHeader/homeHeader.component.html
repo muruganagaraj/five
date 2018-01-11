@@ -1,0 +1,54 @@
+<div class="clearfix">
+	<div class="header-logo-tagline-container">
+		<a class="main-logo-link text-left" src="../../../assets/images/ws-logo.png" alt="SierraPacificMortgage" href="{{config.externalUrls.spmLandingPage}}">
+			<img src="../../../assets/images/ws-logo.png" />
+		</a>
+		<label class="pipe-symbol"></label>
+		<label class="tag-line">Promises Made. Promises Kept.</label>
+	</div>
+	<a class="express-loan-logo-link text-right pull-right" src="../../../assets/images/express_logo.png" alt="Expressloan">
+		<img src="../../../assets/images/express_logo.png" />
+	</a>
+</div>
+<div class="header">
+	<nav class="navbar navbar-inverse navbar-static-top martot-zero row" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed ham-button pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<label class="pipe-symbol pull-right ham-pipe"></label>
+			<span class="device-channel-display pull-left hidden-md-up">
+				<a class="cursor-auto active ">
+					<b>{{homeState.channel}}</b>
+				</a>
+			</span>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="main-header-list-wrapper list-inline">
+				<li class="main-header-list">
+					<a ui-sref-active="active" ui-sref="main">Home</a>
+				</li>
+				<li class="main-header-list" *ngIf="!homeState.channel">
+					<a href="{{config.externalUrls.aboutUs}}">About Us</a>
+				</li>
+				<li class="main-header-list hidden-md-down" *ngIf="homeState.channel">
+					<a class="cursor-auto active">
+						<b>{{homeState.channel}}</b>
+					</a>
+				</li>
+				<li class="main-header-list" *ngIf="homeState.channel">
+					<a href="{{config.externalUrls.joinUsForRetail}}">
+						<span *ngIf="homeState.channel === 'Retail'">Join Sierra Pacific Mortgage</span>
+						<span *ngIf="homeState.channel !== 'Retail'">Become a Partner</span>
+					</a>
+				</li>
+				<li class="main-header-list">
+					<a href="{{config.externalUrls.conatctUs}}">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
